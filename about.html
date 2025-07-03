@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        nav a{
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover{
+            text-decoration: underline;
+            color: rgb(233, 23, 33);
+
+        }
+        nav a:nth-child(2){
+            text-decoration: underline;
+            color: rgb(233, 23, 33);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-capitalize text-center p-3 bg-info-subtle">Naresh institute and technologies</h1>
+    <header class="bg-black p-3 text-light d-flex justify-content-between fs-5 ">
+        <nav>
+            <a href="index.html" class="bi bi-house"> Home</a>
+            <a href="about.html" class="bi bi-question-circle mx-3"> About</a>
+            <a href="service.html" class="bi bi-gear">Service</a>
+            <a href="contact.html" class="bi bi-phone mx-3">Contact us</a>
+        </nav>
+        <div>
+
+            Sign in <span class="bi bi-caret-down"></span>
+        </div>
+    </header>
+
+
+
+    <div class="about-section border border-3 border-info mt-5 ">
+        <h2 class="bg-primary text-center text-light ">Details</h2>
+
+        <table class="table table-hover  table-striped table-bordered m-5" style="width: 90%; ">
+            <tr class="bg-warning-subtle">
+                <th>Id</th>
+                <th>Course Name</th>
+                <th>Faculty Name</th>
+                <th>Duration</th>
+                <th>Timing</th>
+                <th>View</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Angular 8</td>
+                <td>Sudhakar sharma sir</td>
+                <td>45 days</td>
+                <td>07:30 AM</td>
+                <td><button class="btn btn-info text-white">View <span class="bi bi-eye-fill"></span></button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td> Node Js</td>
+                <td> Samba sir</td>
+                <td>45 days</td>
+                <td> 9:00 AM</td>
+                <td><button class="btn btn-info text-white">View <span class="bi bi-eye-fill"></span></button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Java</td>
+                <td>Hari krishna sir</td>
+                <td>60 days</td>
+                <td>04:30 AM</td>
+                <td><button class="btn btn-info text-white">View <span class="bi bi-eye-fill"></span></button></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

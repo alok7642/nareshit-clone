@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <style>
+    body {
+      background-image: url("../public/images/job.png");
+      width: 100%;
+      height: 600px;
+      background-size: cover;
+    }
+
+    .login {
+      margin-left: 30%;
+    }
+
+    .sign-in {
+      cursor: not-allowed;
+    }
+    .user{
+      position: fixed;
+      top: 220px;
+      right:60px;
+    }
+  </style>
+</head>
+
+<body >
+  <h1 class="text-capitalize text-center p-3 bg-info-subtle">Naresh institute and technologies</h1>
+  <header class="bg-black p-3 text-light d-flex justify-content-between fs-5 ">
+    <nav>
+      <a href="index.html" class="bi bi-house"> Home</a>
+      <a href="about.html" class="bi bi-question-circle mx-3"> About</a>
+      <a href="service.html" class="bi bi-gear">Service</a>
+      <a href="contact.html" class="bi bi-phone mx-3">Contact us</a>
+    </nav>
+
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle"  data-bs-toggle="dropdown" >Account</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="login.html">Sign In</a></li>
+        <li><a class="dropdown-item" href="register.html">Sign up</a></li>
+        <li><a class="dropdown-item" href="change-password.html">Change Password</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- login  -->
+  <div class="login border border-black px-5 border-2 rounded rounded-3 my-5 " style="width: 750px; height: 400px;">
+
+    <h1 class="text-center mt-0 pt-0">please Login Your Account</h1>
+    <dl class="mt-5">
+      <dt>Email Id:</dt>
+      <dd class="btn btn-group">
+        <span class="btn btn-danger bi-people"></span><input class="form-control " type="email" placeholder="Email id"
+          style="width: 550px;"> <span class="btn btn-danger bi bi-star"></span>
+      </dd>
+
+      <dt>Password</dt>
+      <dd class="btn btn-group">
+        <span class="btn btn-danger bi bi-lock-fill "></span> <input type="password" placeholder="password"
+          style="width: 550px;"> <span class="btn btn-danger bi bi-star"></span>
+      </dd>
+    </dl>
+
+    <div class="d-flex justify-content-between m-5">
+      <span class="btn btn-warning bi bi-person-plus"> Sign Up</span>
+      <span class="btn btn-success bi bi-box-arrow-in-right sign-in"> Sign In</span>
+
+    </div>
+
+
+  </div>
+
+  <div class="user">
+    <img src="../public/images/user.png" class="float-end " alt="">
+  </div>
+
+
+
+</body>
+
+</html>

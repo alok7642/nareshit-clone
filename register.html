@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+    nav a{
+        text-decoration: none;
+        color: white;
+    }
+    form{
+        margin-left: 30%;
+        width: 40%;
+    }
+    .user{
+      position: fixed;
+      top: 220px;
+      right:60px;
+    }
+    .terms{
+        color: red;
+    }
+
+    </style>
+</head>
+
+<body>
+    <h1 class="text-capitalize text-center p-3 bg-info-subtle">Naresh institute and technologies</h1>
+    <header class="bg-black p-3 text-light d-flex justify-content-between fs-5 ">
+        <nav>
+            <a href="index.html" class="bi bi-house"> Home</a>
+            <a href="about.html" class="bi bi-question-circle mx-3"> About</a>
+            <a href="service.html" class="bi bi-gear">Service</a>
+            <a href="contact.html" class="bi bi-phone mx-3">Contact us</a>
+        </nav>
+
+
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle"  data-bs-toggle="dropdown" >Account</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">Sign In</a></li>
+              <li><a class="dropdown-item" href="register.html">Sign up</a></li>
+              <li><a class="dropdown-item" href="change-password.html">Change Password</a></li>
+            </ul>
+          </div>
+    </header>
+
+
+    <form action="submit" class=" mt-5 p-4 border border-2 rounded rounded-3 form-box">
+        <h3 class="text-center mt-3">Registeration Form</h3>
+
+        <label class="form-label mt-4 fw-bold">Full Name : </label>
+        <input type="text" class="form-control" name="name" placeholder="Full Name ">
+
+        <label class="form-label fw-bold mt-3">Email : </label>
+        <input type="text" class="form-control" name="email" placeholder="Emal Id  ">
+        <label class="form-label fw-bold mt-4">Mobile : </label>
+        <input type="text" class="form-control" name="phone" placeholder="contact number ">
+        <label class="form-label  fw-bold mt-4">Date : </label>
+        <input type="text" class="form-control" name="date" placeholder="date ">
+
+        <label  class=" mt-4 fw-bold" >Image</label>
+        <input type="file" class="form-control">
+
+        <label class="form-label  fw-bold mt-4">Password: </label>
+        <input type="text" class="form-control" name="name" placeholder="Password">
+
+        <label class="form-label  fw-bold mt-4">Confirm Password : </label>
+        <input type="text" class="form-control" name="name" placeholder="Confirm password">
+
+        <label for="" class="form-label  fw-bold mt-4">Gender</label><br>
+        <label class="form-check-label" for="male">Male </label>
+        <input type="radio" name="gender" id="">
+        <label class="form-check-label" for="female">Female </label>
+        <input type="radio" name="gender"><br>
+
+        <label for="checkbox ">
+            <input type="checkbox" class="checkbox mt-4" name="checkbox" >
+            I've read and Accept the <a class="terms" data-bs-toggle="modal" data-bs-target="#terms-condition" href="#"><b>Terms and Conditions</b></a>
+        <!-- <a class="terms" data-bs-toggle="modal" data-bs-target="#terms-condition" href="#">Terms and Conditions</a> -->
+
+        <div class="mt-5 d-flex justify-content-between">
+            <button class="btn btn-warning text-white"> Already you have an account</button>
+            <button class="btn btn-success">Register</button>
+        </div>
+    </form>
+
+    <div class="user">
+        <img src="../public/images/user.png" class="float-end " alt="">
+      </div>
+
+      <div class="modal" id="terms-condition">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Terms and Conditions</h4>
+                    <button class="btn btn-close" data-bs-dismiss="index.html"></button>
+                </div>
+                <div class="modal-body">
+                    <P class="bi bi-star">A Terms and Conditions agreement is the agreement that includes the terms, the rules and the guidelines of acceptable behavior and other useful sections to which users must agree in order to use or access your website and mobile app.</P>
+                    <p class="bi bi-star">    While most websites seem to have one, there's actually no legal requirement for defining terms and conditions. However, if you are gathering user's personal data, you are required to have a stated Privacy Policy. Terms and Conditions may not be required by law, but it's still a smart thing to include.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+</body>
+
+</html>
